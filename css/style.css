@@ -1,0 +1,287 @@
+*{
+    padding:0;
+    margin:0;
+    line-height: 1.5;
+}
+
+.main{
+    width:100vw;
+    height:100vh;
+    background: url("../images/home.jpg")no-repeat center center/cover; 
+    filter: brightness(90%);
+    filter:blur(30%);
+    animation:homepage backwards 3s ease-in ;
+}
+@keyframes homepage {
+    from { background-size:150%; }
+    to { background-size: 100%; }
+}
+.nav{
+    width:100%;
+    height:15%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    margin:10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 1s;
+}
+.nav a:hover{
+    color:pink;
+}
+.nav img{
+    width:10%;
+    height:100%;
+    margin-right:150px;
+    margin-left: 20px;
+    border-radius: 100%;
+}
+.nav button{
+    padding:10px;
+    position: absolute;
+    right: 20px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: 1s;
+    cursor: pointer;
+}
+.nav button:hover{
+    background: rgb(255, 196, 196);
+}
+.nav>#call{
+    position: absolute;
+    right: 120px;
+}
+.page1_content{
+    height:40vh;
+    width:100vw;
+}
+.page1_content p{
+    color:white;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 5px 5px 3px black;
+}
+#head{
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-top: 200px;
+}
+#subhead{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.about_resort{
+    margin-top: 50px;
+    height:50vh;
+   /* color:rgb(6, 6, 37);  */
+}
+.about_resort p{
+    text-align: center;
+    margin:5px;
+}
+#about_resort_head{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+#about_resort_subhead{
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+#about_resort_content{
+    margin:70px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.number{
+    color:rgb(235, 175, 11);
+    font-size: 20px;
+    font-weight:bolder;
+    letter-spacing: 1px;
+}
+#line{
+    display: inline-block;
+    width:50px;
+    height:3px;
+    background-color :rgb(235, 175, 11);
+    margin-left:48%;
+}
+#about_resort_btn{
+    display: block;
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    background: black;
+    width:150px;
+    color:white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border:1px solid transparent;
+    margin-top: 20px;
+}
+#about_resort_btn:hover{
+    background-color :rgb(235, 175, 11);
+    color:black;
+    font-weight: 600;
+}
+.FandB{
+    margin-top:180px;
+    display: flex;
+}
+
+.FandB_Head{
+    width:25vw;
+}
+.FandB_Head p{
+    padding:20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.FandB_Head h3{
+    font-size: 30px;
+    padding-left:30px;
+}
+.FandB_images{
+    width:75vw;
+    height:90vh;
+}
+.FandB_images img{
+    height:100%;
+}
+.info_img{
+    width:400px;
+    height:300px;
+    background: rgba(0,0,0,0.5);
+    color:white;
+    position: absolute;
+    height:200vh;
+}   
+.cap{
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.carousel-caption{
+    top:0;
+    /* bottom: auto; */
+    background:rgba(0,0,0,0.8);
+    width:25vw;
+    height:30vh;
+    bottom: auto;
+}
+.no{
+    font-size:20px;
+    color:yellow;
+    font-weight: 400;
+}
+.rest{
+    padding:5px;
+    /* color:rgb(212, 28, 28) ; */
+    font-size:20px;
+    font-weight: 700;
+}
+.item p{
+    margin:20px;
+}
+.content{
+    line-height: 1.6;
+}
+.events{
+    height:200vh;
+    width:100vw;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.corporate, .wedding, .park{
+    display: flex;
+    height:30%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin:50px;
+}
+.img{
+    width:30%;
+    height:100%;
+}
+.content_event{
+    color:white;
+    width:20%;
+    margin-left: 50px;
+}
+.img img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px white;;
+}
+/* .park .img{
+    width:60%;
+} */
+.mid_line{
+    margin-left:20px;
+    width:2px;
+    height:70%;
+    background-color :rgb(235, 175, 11);
+}
+
+#event{
+    animation: eve 2s  infinite ease-in-out ;
+}
+@keyframes eve {
+    25%{color:gold}
+    50%{color:red}
+    75%{color:blue}
+    100%{color:greenyellow}
+}
+
+.abt_md{
+    width:100vw;
+    height:60vh;
+    text-align: center;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+}
+
+.abt_md h3{
+    width:40vw;
+    margin:50px auto auto auto;
+    line-height: 1.5;
+
+}
+.abt_md img{
+    width:20vw;
+    height:100%;
+    margin-left:100px;
+    margin-top:30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+.experiances{
+    height:50vh;
+    margin-top:200px;
+    background: black;
+}
+.experiances h3{
+    animation: exp 2s  infinite ease-in-out ;
+    color:white;
+}
+@keyframes exp {
+    25%{color:gold}
+    50%{color:red}
+    75%{color:blue}
+    100%{color:greenyellow}
+}

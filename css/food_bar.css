@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+}
+.main{
+    width:100vw;
+    height:400vh;
+    background-color: bisque;
+    background: url("../images/f&b_home.jpg")no-repeat center center/cover;
+    letter-spacing: 1.5px;
+}
+.indian,.chinese{
+    display: flex;
+    width:100vw;
+    height:40vh;
+    margin:20px;
+    margin-bottom: 30px;
+}
+.indian img,.chinese img{
+    height:100%;
+    width:18vw;
+    margin:20px;
+    box-shadow: 5px 5px 6px black;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.indian img{
+    animation: img_ani 1s infinite ease-in-out;
+}
+@keyframes img_ani {
+    25%{
+        opacity: 1.2;
+    }
+    50%{
+        opacity:0.8;
+    }
+    75%{
+        opacity: 1.2;
+    }
+    100%{
+        opacity: 0.8;
+    }
+}
+#about_resort_btn{
+    display: block;
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    background: black;
+    width:150px;
+    color:white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border:1px solid transparent;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#about_resort_btn:hover{
+    background-color :rgb(235, 175, 11);
+    color:black;
+    font-weight: 600;
+}
+
